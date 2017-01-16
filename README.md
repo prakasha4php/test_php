@@ -36,6 +36,7 @@ Total price expected: £36.95
 Basket: 001,002,001,003
 Total price expected: £73.76
 ```
+<<<<<<< HEAD
 
 
 
@@ -43,3 +44,5 @@ Total price expected: £73.76
 
 - Run `vendor/bin/phpunit -c test/phpunit.xml` to run the test suite.
 - Code coverage report -  test_php\test\coverage
+=======
+>>>>>>> 175cd947127bfe205a6a8c083074e2646f15eed3
