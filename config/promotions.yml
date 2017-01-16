@@ -1,0 +1,9 @@
+ProductDiscount:
+    001:
+        productCode : '001'
+        minimumQuantity : 2
+        promotionalPrice : 8.50
+OrderTotalDiscount:
+    tenPercent :  #% discount
+         minimumTotalAmount : 60
+         percent: 10
