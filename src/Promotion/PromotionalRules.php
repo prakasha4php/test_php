@@ -18,11 +18,6 @@ class PromotionalRules
     protected $promotionalRules;
 
     /**
-     * @var float
-     */
-    public $total = 0;
-
-    /**
      * PromotionalRules constructor.
      * @param $promotionalRules
      */
