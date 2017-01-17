@@ -36,10 +36,6 @@ class CheckoutTest extends \PHPUnit_Framework_TestCase
      */
     protected $product4;
 
-    /** @var array  */
-    protected $promotionRule = [];
-
-   
     /**
      * Set Up
      */
