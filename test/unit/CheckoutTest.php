@@ -39,44 +39,18 @@ class CheckoutTest extends \PHPUnit_Framework_TestCase
     /** @var array  */
     protected $promotionRule = [];
 
-    /**
-     * @var
-     */
-    protected $productMock;
-
+   
     /**
      * Set Up
      */
     public function setUp()
     {
-        // $this->checkoutFactory = $this->getMockForAbstractClass('TestPhp\CheckoutFactory');
         $this->checkoutFactory = CheckoutFactory::create();
-        $this->productMock = ['001', 'Lavender heart', 9.25];
 
         $this->product1 = new Product('001', 'Lavender heart', 9.25);
         $this->product2 = new Product('002', 'Personalised cufflinks', 45.00);
         $this->product3 = new Product('003', 'Kids T-shirt', 19.95);
         $this->product4 = new Product('001', 'Lavender heart', 9.25);
-
-        $this->promotionRule = [
-            'ProductDiscount' =>
-                [
-                    [
-                        'productCode' => '001',
-                        'minimumQuantity' => 2,
-                        'promotionalPrice' => 8.5,
-                    ],
-                ],
-            'OrderTotalDiscount' =>
-                [
-                    'tenPercent' =>
-                        [
-                            'minimumTotalAmount' => 60,
-                            'percent' => 10,
-                        ],
-                ],
-        ];
-
     }
 
     /**
